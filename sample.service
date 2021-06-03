@@ -1,0 +1,10 @@
+[Unit]
+Description=Github Projects Auto Fetcher
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python ./projectfetcher.py
+
+[Install]
+WantedBy=multi-user.target
