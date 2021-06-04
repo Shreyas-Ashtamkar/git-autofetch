@@ -38,8 +38,7 @@ create_file(
 file_name="projectlist.py", 
 replace=False,
 text= \
-f'''
-from projects import _Project
+f'''from projects import _Project
 
 # Create A Project Object for each and every project you want to auto fetch
 PROJECT_LIST = [
@@ -53,5 +52,8 @@ PROJECT_LIST = [
 create_file(
 file_name="configs.py",
 replace=False,
-text='DELAY = 30'
+text= \
+f'''# Delay between checks in seconds.
+DELAY = 300
+'''
 )
