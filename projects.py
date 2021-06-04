@@ -29,21 +29,3 @@ class _Project:
     
     def __str__(self) -> str:
         return self.name
-
-
-PROJECT_LIST = [
-    _Project(
-        path = "/mnt/Data_Drive/Codes/Python/useful-modules/git-src/batteryutils"
-    ),
-    _Project(
-        path = "/mnt/Data_Drive/Codes/Python/useful-modules/git-src/Font Size Mapper"
-    ),
-    _Project(
-        path = "/mnt/Data_Drive/Codes/Python/useful-modules/git-src/OpenCV-Magic"
-    )
-]
-
-
-PROJECT_COUNT = len(PROJECT_LIST)
-
-print(f"There {'are' if PROJECT_COUNT != 1 else 'is'} {PROJECT_COUNT} project{'s' if PROJECT_COUNT != 1 else ''} registered.")

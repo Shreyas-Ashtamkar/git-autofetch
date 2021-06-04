@@ -7,11 +7,11 @@ if sys.version_info.major != 3:
 PYTHON_EXEC  = sys.executable
 THIS_FOLDER  = os.path.dirname(__file__)
 
-PROJECTS_XML = './project_list.xml'
+PROJECTS_LIST = './project_list.py'
 
-if not os.path.isfile(PROJECTS_XML):
-    xmlfile = open(PROJECTS_XML, 'w')    
-    xmlfile.write('')
+if not os.path.isfile(PROJECTS_LIST):
+    xmlfile = open(PROJECTS_LIST, 'w') 
+    xmlfile.write('PROJECT_LIST = []')
 
 service_script = \
 f'''[Unit]

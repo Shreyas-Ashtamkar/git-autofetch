@@ -2,4 +2,4 @@
 __pycache__/
 autofetch.service
 venv/
-project_list.xml
+projectlist.py
