@@ -1,1 +1,1 @@
-DELAY = 3
+DELAY = 30

@@ -7,7 +7,7 @@ if sys.version_info.major != 3:
 PYTHON_EXEC  = sys.executable
 THIS_FOLDER  = os.path.dirname(__file__)
 
-PROJECTS_LIST = './project_list.py'
+PROJECTS_LIST = './projectlist.py'
 
 if not os.path.isfile(PROJECTS_LIST):
     xmlfile = open(PROJECTS_LIST, 'w') 
