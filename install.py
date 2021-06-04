@@ -15,9 +15,9 @@ if not os.path.isfile(PROJECTS_LIST):
         'from projects import _Project\n\n' \
         '# Create A Project Object for each and every project you want to auto fetch\n'\
         'PROJECT_LIST = [\n'\
-        '  _Project(\n'\
-        f'    path={THIS_FOLDER}\n'\
-        ')\n' \
+        '    _Project(\n'\
+        f'        path={THIS_FOLDER}\n'\
+        '    )\n' \
         ']\n'
     )
     xmlfile.close()
