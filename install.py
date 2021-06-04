@@ -53,9 +53,5 @@ PROJECT_LIST = [
 create_file(
 file_name="configs.py",
 replace=False,
-text=\
-f'''
-DELAY = 30
-
-'''
+text='DELAY = 30'
 )
