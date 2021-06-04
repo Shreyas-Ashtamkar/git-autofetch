@@ -6,7 +6,7 @@ from multiprocessing import Process
 def fetch():
     for project in PROJECT_LIST:
         print("updating :", project)
-        Process(target=run,args=(f"cd {project.path} && git pull --recurse-submodules",)).start()
+        Process(target=run,args=(f"cd {project.path} && git pull",)).start()
 
 if __name__ == '__main__':
     fetch()

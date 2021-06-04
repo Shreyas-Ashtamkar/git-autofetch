@@ -10,7 +10,7 @@ THIS_FOLDER  = os.path.dirname(__file__)
 PROJECTS_XML = './project_list.xml'
 
 if not os.path.isfile(PROJECTS_XML):
-    xmlfile = open(PROJECTS_XML,)    
+    xmlfile = open(PROJECTS_XML, 'w')    
     xmlfile.write('')
 
 service_script = \
