@@ -13,9 +13,11 @@ else:
 def fetch():
     for project in PROJECT_LIST:
         print("updating :", project)
+        if project.creds:
+            project.url.replace('github.com', f'{project.creds["username"]}:{project.creds["password"].replace("@","%40")}@github.com')
         Process(
             target=run, 
-            args=(f"cd {project.path} && git pull",)
+            args=(f"cd {project.path} && git pull {project.url}",)
         ).start()
 
 if __name__ == '__main__':
