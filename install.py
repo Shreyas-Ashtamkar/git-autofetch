@@ -21,6 +21,7 @@ file_name="autofetch.service",
 replace=True,
 text=\
 f'''[Unit]
+User={os.environ["USER"]}
 Description=Github Projects Auto Fetcher
 After=multi-user.target
 # Conflicts=getty@tty1.service
