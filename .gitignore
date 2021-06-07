@@ -4,3 +4,4 @@
 autofetch.service
 projectlist.py
 configs.py
+*.pyc
