@@ -5,7 +5,7 @@ if sys.version_info.major != 3:
     exit(1)
 
 PYTHON_EXEC  = sys.executable
-THIS_FOLDER  = os.path.dirname(__file__)
+THIS_FOLDER  = os.getcwd()
 
 def create_file(file_name, text, replace=False):
     if not replace and os.path.isfile(f"{THIS_FOLDER}/{file_name}"):
